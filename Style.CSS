@@ -1,0 +1,52 @@
+<style>* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: aliceblue;
+    padding: 1px;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.column.side {
+    background-color: lightgray;
+    width: 20%;
+}
+
+.column.middle {
+    position: relative;
+    background-image: url("Globe.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: green;
+    width: 50%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+</style>
